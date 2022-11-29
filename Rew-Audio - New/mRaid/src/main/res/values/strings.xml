@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">RewAudio Ads Demo</string>
+    <string name="content_url"><![CDATA[https://storage.googleapis.com/gvabox/media/samples/stock.mp4]]></string>
+    <string name="ad_tag_url"><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=]]></string>
+
+
+        <string name="app_ids">ca-app-pub-3940256099942544~3347511713</string>
+
+
+
+        <string name="google_baner">/6499/example/banner</string>
+        <string name="g_inr">/6499/example/interstitial</string>
+        <string name="g_native">/6499/example/native</string>
+
+        <string name="g_open_ad">/6499/example/app-open</string>
+
+
+
+        <string name="privacy_link">"http://www.google.com"</string>
+
+        <string name="file_provider_authority"> com.blazingtrail.wowdp.fileprovider</string>
+
+        <string name="ad">AD</string>
+        <string name="address_file">DisplayProfile</string>
+
+        <string name="album">Album</string>
+        <string name="internet_warning1">Please Connect Your WIFI or ON Mobile Data.</string>
+
+        <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+        <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+        <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+        <string name="btnstat">Let\'s Start</string>
+        <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+        <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+        <string name="character_counter_pattern">%1$d/%2$d</string>
+        <string name="chip_text">Chip text</string>
+        <string name="clear_text_end_icon_content_description">Clear text</string>
+        <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+        <string name="creation">Creation</string>
+        <string name="error_icon_content_description">Error</string>
+        <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+        <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+        <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+
+
+        <string name="s1">Save image</string>
+        <string name="s2">Allow Ad to store image in Picture gallery?</string>
+        <string name="s3">Accept</string>
+        <string name="s4">Decline</string>
+        <string name="s5">Create calendar event</string>
+        <string name="s6">Allow Ad to create a calendar event?</string>
+        <string name="s7">Test Ad</string>
+        <string name="save">save</string>
+        <string name="search_menu_title">Search</string>
+        <string name="select_photos">Select Photo</string>
+        <string name="status_bar_notification_info_overflow">999+</string>
+</resources>
