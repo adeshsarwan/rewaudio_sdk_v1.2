@@ -4,12 +4,11 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_alignParentBottom="true"
-    android:layout_height="80dp">
+    android:layout_height="70dp">
     <LinearLayout
         android:id="@+id/companionAdSlotFrame"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@color/white"
         android:visibility="gone"
         android:orientation="vertical" />
     <RelativeLayout
@@ -37,8 +36,21 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/cancel"
             android:layout_below="@+id/cancel"
-            android:layout_alignParentRight="true"
             android:src="@drawable/volume_high" />
+       <ImageView
+            android:id="@+id/ads"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+           android:padding="5dp"
+           android:layout_marginRight="5dp"
+           android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/volume"
+            android:layout_below="@+id/cancel"
+            android:src="@drawable/placeholder" />
     </RelativeLayout>
 </RelativeLayout>
