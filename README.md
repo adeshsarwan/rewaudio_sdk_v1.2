@@ -93,6 +93,7 @@ Declaring Adview dynamically
       public static  String google_Id  = "abcxyz"; //replace this with your google network id
       public static  String publisher_id  = "98401SDFsdf"; //replace with your Rewaudio Publisher id
       public static  String adspot_id  = "sdf324sd"; //replace with ur Google Ad Spot id
+      public static String sz  = "sz=1x1"; // replace with your ad image size 
     }
 
 ## Mediation 
