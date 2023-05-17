@@ -78,7 +78,11 @@ public class MraidAds {
     public MraidAds(Context context, ViewStub viewStub,String UnitId) {
         this.context = context;
         this.viewStub = viewStub;
-        AD_TAG_URL = "https://pubads.g.doubleclick.net/gampad/ads?iu=/"+AppConstant.google_id + "/" + UnitId + "/audio-preroll&ad_type=audio&sz=1x1&ciu_szs=300x250&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
+       // AD_TAG_URL = "https://pubads.g.doubleclick.net/gampad/ads?iu=/"+AppConstant.google_id + "/" + UnitId + "/audio-preroll&ad_type=audio&sz=1x1&ciu_szs=300x250&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
+//        AD_TAG_URL = "https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/" +
+//                 "audio-preroll&ad_type=audio&sz=1x1" + AppConstant.ciu_szs + "&gdfp_req=1&output=vast&" +
+//                "unviewed_position_start=1&env=vp&impl=s&correlator=";
+        AD_TAG_URL = "https://pubads.g.doubleclick.net/gampad/ads?iu=/22475853447,22868303605/Qtons_com.mbit.satatussaver.storysaver.hdwallpaper.video.downloader.allvideodownloader_Audio-Video&description_url=https%3A%2F%2Fwww.mbitmusic.in&tfcd=0&npa=0&ad_type=audio&"+AppConstant.sz+"&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
         audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
         viewStub.setLayoutResource(R.layout.ads);
         inflated = viewStub.inflate();
@@ -86,18 +90,15 @@ public class MraidAds {
         companionView = inflated.findViewById(R.id.companionAdSlotFrame);
         player = new ExoPlayer.Builder(context).build();
         DefaultDataSource.Factory dataSourceFactory = new DefaultDataSource.Factory(context);
-
         mediaSession = new MediaSessionCompat(context, "audio_demo");
         mediaSession.setActive(true);
-
         mediaSessionConnector = new MediaSessionConnector(mediaSession);
-
         mediaSessionConnector.setPlayer(player);
-
         imaService = new ImaService(context, dataSourceFactory, player);
         inflated.findViewById(R.id.cancel).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                companionView.setVisibility(View.GONE);
                 inflated.findViewById(R.id.rel).setVisibility(View.GONE);
                 if(mediaPlayer != null)mediaPlayer.stop();
                 if(player != null)player.stop();
@@ -128,6 +129,9 @@ public class MraidAds {
                 }
             }
         });
+        companionView.setVisibility(View.VISIBLE);
+        inflated.findViewById(R.id.rel).setVisibility(View.VISIBLE);
+        initializeAds(context, companionView);
     }
 
     public int getConnection() {
