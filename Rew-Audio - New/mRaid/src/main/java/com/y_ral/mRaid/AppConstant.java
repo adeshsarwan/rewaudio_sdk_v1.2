@@ -8,6 +8,8 @@ public class AppConstant {
     public static String play = "play";
     public static String mute = "mute";
     public static String unmute  = "unmute";
+
+    public static String sz  = "sz=1x1";
     public static String click  = "click";
     public static String publisher_id  = "98401SDFsdf";
     public static String adspot_id  = "sdf324sd";
