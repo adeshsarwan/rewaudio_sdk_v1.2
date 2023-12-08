@@ -266,9 +266,9 @@ public class MraidAds {
                     String unique_id = Settings.Secure.getString(context.getContentResolver(),
                             Settings.Secure.ANDROID_ID) + "-" + System.currentTimeMillis();
                     String requestObj = "{ \"publisher_id\": \"" + AppConstant.publisher_id + "\", \"adspot_id\": \"" + AppConstant.adspot_id + "\", \"coppa\": 0, \"imp\": [ { \"id\": \"" + unique_id + "\", \"instl\": 0, \"audio\": { \"minduration\": 10, \"maxduration\": 20, \"startdelay\": 0, \"audio_mimes\": [ \"audio/mp3\" ] }, \"image\": { \"h\": " + AppConstant.height + ", \"w\": " + AppConstant.width + ", \"mimes\": [ \"image/gif\", \"image/jpeg\", \"image/png\", \"text/javascript\" ] } } ], \"site\": { \"domain\": \"junk1.com\" }, \"device\": { \"didsha1\": \"132079238ec783b0b89dff308e1f9bdd08576273\", \"ua\": \"" + ua + "\", \"connectiontype\": " + getConnection() + ", \"geo\": { \"lat\": 42.378, \"lon\": -71.227 }, \"devicetype\": 1 }, \"user\": { \"googleadid\": \"" + advertId + "\", \"yob\": 1961, \"gender\": \"F\" }, \"id\": \"3b99d0d9-1bff-ff85-882b-3c732f1e6da4\" }";
-                    Log.e("logcat url", "https://bidder.rewaudio.blazingtrail.in");
+                    Log.e("logcat url", "http://172.105.54.56:8080/rtb/bids/nexage");
                     Log.e("logcat request", requestObj);
-                    URL url = new URL("https://bidder.rewaudio.blazingtrail.in");
+                    URL url = new URL("http://172.105.54.56:8080/rtb/bids/nexage");
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("POST");
                     conn.setRequestProperty("Content-Type", "application/json;charset=UTF-8");

@@ -32,11 +32,10 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         ads = findViewById(R.id.ads);
-        MraidAds mraidAds = new MraidAds(this, ads,"external");
-        mraidAds.loadGAds();
-
-
     }
 
-
+    public void openAds(View V){
+        MraidAds mraidAds = new MraidAds(this, ads,"external");
+        mraidAds.loadGAds();
+    }
 }
